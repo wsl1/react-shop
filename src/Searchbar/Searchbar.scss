@@ -1,0 +1,23 @@
+@import '../scss/colors';
+
+.searchbar {
+    display: flex;
+    width: 100%;
+    padding: 0 3vw;
+    &__input {
+        flex-grow: 3;
+    }
+    &__submit {
+        flex-grow: 1;
+        background: $button;
+        border: none;
+        transition: background .5s;
+        &:active {
+            background: $button-active;
+        }
+        &:focus {
+         //   outline: none;
+        }
+    }
+
+}
