@@ -1,0 +1,15 @@
+@import '../scss/colors';
+
+.topbar {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+.user {
+    margin: 10px;
+}
+
+.cart {
+    margin: 10px;
+}
