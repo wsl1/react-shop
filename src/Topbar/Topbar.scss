@@ -1,15 +1,5 @@
-@import '../scss/colors';
-
 .topbar {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-}
-
-.user {
-    margin: 10px;
-}
-
-.cart {
-    margin: 10px;
+    background: #464a49;
+    height: 130px;
+    padding: 20px 15px;
 }

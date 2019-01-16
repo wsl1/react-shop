@@ -1,6 +1,15 @@
+@import '../scss/colors';
+
 .navbar {
-    background: #464a49;
-    height: 130px;
-    padding-top: 20px;
-    padding: 20px 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+.user {
+    margin: 10px;
+}
+
+.cart {
+    margin: 10px;
 }
