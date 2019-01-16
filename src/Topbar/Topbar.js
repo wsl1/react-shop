@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import User from './User';
-import Cart from './Cart';
+import User from './User/User';
+import Cart from './Cart/Cart';
 import './Topbar.scss';
 
 class Topbar extends Component {

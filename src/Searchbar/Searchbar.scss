@@ -1,14 +1,14 @@
 @import '../scss/colors';
 
-$input-rounding: 3px 0px 0px 3px;
-$submit-rounding: 0px 3px 3px 0px;
+//$input-rounding: 3px 0px 0px 3px;
+//$submit-rounding: 0px 3px 3px 0px;
 
 .searchbar {
     display: flex;
     height: 35px;
     &__input {
         border: 1px solid transparent;
-        border-radius: $input-rounding;
+        //border-radius: $input-rounding;
         width: 100%;
         &::placeholder {
             padding: 1px;
@@ -20,7 +20,7 @@ $submit-rounding: 0px 3px 3px 0px;
     &__submit {
         flex-shrink: 0;
         border: 1px solid transparent;
-        border-radius: $submit-rounding;
+        //border-radius: $submit-rounding;
         width: 45px;
         background: $button-color;
         transition: background .3s;

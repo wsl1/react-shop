@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import Magnifier from './Magnifier';
+import Magnifier from '../Magnifier/Magnifier';
 import './Searchbar.scss';
 
 class Searchbar extends Component {
