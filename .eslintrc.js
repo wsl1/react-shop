@@ -16,6 +16,7 @@ module.exports = {
         "no-tabs": 0,
         "react/require-default-props": 0,
         "quote-props": 0,
-        "import/no-extraneous-dependencies": 0
+        "import/no-extraneous-dependencies": 0,
+        "no-confusing-arrow": 0
     }
 };

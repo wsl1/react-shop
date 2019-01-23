@@ -8,8 +8,8 @@ class Navbar extends Component {
   render() {
     return (
       <div className="navbar">
-        <User className="user" width={25} height={25} />
-        <Cart className="cart" width={25} height={25} />
+        <User width={25} height={25} />
+        <Cart width={25} height={25} />
       </div>
     );
   }
