@@ -1,16 +1,21 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 import User from './User/User';
 import Cart from './Cart/Cart';
 
-import './Navbar.scss';
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+`;
 
 class Navbar extends Component {
   render() {
     return (
-      <div className="navbar">
+      <Wrapper>
         <User width={25} height={25} />
         <Cart width={25} height={25} />
-      </div>
+      </Wrapper>
     );
   }
 }

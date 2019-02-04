@@ -1,14 +1,41 @@
 import React, { Component } from 'react';
-import classNames from 'classnames';
+import styled from 'styled-components';
 import Magnifier from '../Magnifier/Magnifier';
-import './Searchbar.scss';
+
+const Wrapper = styled.div`
+  display: flex;
+  height: 35px;
+`;
+
+const Input = styled.input`
+  border: 1px solid transparent;
+  width: 100%;
+  ::placeholder {
+    padding: 1px;
+  }
+  :focus {
+    outline: none;
+  }
+`;
+
+const Submit = styled.button`
+    flex-shrink: 0;
+    border: 1px solid transparent;
+    width: 45px;
+    background: ${(props) => props.isSubmitted ? props.theme.buttonActiveColor : props.theme.buttonColor};
+    transition: background .3s;
+    :active {
+    background: ${(props) => props.theme.buttonActiveColor}
+    }
+    :focus {
+      outline: none;
+    }
+`;
 
 class Searchbar extends Component {
   state = {
     isSubmitted: 0,
   }
-
-  button = React.createRef();
 
   onKeyUp = (e) => {
     if (e.keyCode === 13) {
@@ -24,17 +51,13 @@ class Searchbar extends Component {
 
   render() {
     const { isSubmitted } = this.state;
-    const submitButton = classNames({
-      'searchbar__submit': true,
-      'searchbar__submit--active': isSubmitted,
-    });
     return (
-      <div className="searchbar">
-        <input onKeyDown={this.onKeyDown} onKeyUp={this.onKeyUp} className="searchbar__input" type="text" placeholder="Search" />
-        <button ref={this.button} className={submitButton} type="submit">
+      <Wrapper>
+        <Input onKeyDown={this.onKeyDown} onKeyUp={this.onKeyUp} type="text" placeholder="Search" />
+        <Submit isSubmitted={isSubmitted} type="submit">
           <Magnifier width={25} height={25} />
-        </button>
-      </div>
+        </Submit>
+      </Wrapper>
     );
   }
 }
