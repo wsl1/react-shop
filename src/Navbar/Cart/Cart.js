@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 const Svg = styled.svg`
   margin: 10px;
+  cursor: pointer;
 `;
 
 const Cart = ({ width, height }) => (

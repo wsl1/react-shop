@@ -22,6 +22,7 @@ const Submit = styled.button`
     flex-shrink: 0;
     border: 1px solid transparent;
     width: 45px;
+    cursor: pointer;
     background: ${(props) => props.isSubmitted ? props.theme.buttonActiveColor : props.theme.buttonColor};
     transition: background .3s;
     :active {
